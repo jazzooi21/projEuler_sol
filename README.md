@@ -1,7 +1,9 @@
 Project Euler solutions
 =======
 
-Simple solutions to [Project Euler](https://projecteuler.net/) math problems. The start of my long journey in learning fluency in Python and programming languages in general.
+Simple solutions to [Project Euler](https://projecteuler.net/) math problems. 
+
+The start of my long journey in becoming more fluent in using Python and programming languages in general to solve mathematical problems.
 
 Written (mostly) in Python 3.
 

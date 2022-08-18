@@ -12,7 +12,7 @@ def isprime(p):
     return True
 
 
-def return_primes_between_ab(a, b):
+def primes_between_ab(a, b):
     p_list = []
     for i in range(a, b):
         if isprime(i):

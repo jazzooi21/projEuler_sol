@@ -13,11 +13,11 @@ def isprime(p):
 
 
 def return_primes_between_ab(a, b):
-    primes = []
+    p_list = []
     for i in range(a, b):
         if isprime(i):
-            primes.append(i)
-    return primes
+            p_list.append(i)
+    return p_list
 
 
 def factors(num):

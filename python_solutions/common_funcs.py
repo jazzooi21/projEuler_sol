@@ -1,4 +1,5 @@
 import math
+import numpy as np
 
 def isprime(p):
     if p == 1 or p <= 0:

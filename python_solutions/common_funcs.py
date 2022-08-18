@@ -12,9 +12,9 @@ def isprime(p):
     return True
 
 
-def return_primes_under_n(n):
+def return_primes_between_ab(a, b):
     primes = []
-    for i in range(1, n):
+    for i in range(a, b):
         if isprime(i):
             primes.append(i)
     return primes

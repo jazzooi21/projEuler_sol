@@ -28,3 +28,15 @@ def factors(num):
             fac.add(i)
             fac.add(int(num / i))
     return fac
+
+
+def primefactors(num):
+    fac = set()
+    fac.add(1)
+    for i in range(2, int(math.sqrt(num))+1):
+        if num % i == 0:
+            if isprime(i):
+                fac.add(i)
+            if isprime(int(num / i)):
+                fac.add(int(num / i))
+    return fac

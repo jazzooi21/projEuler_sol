@@ -32,7 +32,6 @@ def factors(num):
 
 def primefactors(num):
     fac = set()
-    fac.add(1)
     for i in range(2, int(math.sqrt(num))+1):
         if num % i == 0:
             if isprime(i):

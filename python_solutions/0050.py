@@ -20,16 +20,28 @@ def primes_between_ab(a, b):
     return p_list
 
 
-primes = primes_between_ab(1, 1000000)
-summation = 0
+primes = primes_between_ab(1, 10**6)
 primesum = []
 
-for p in primes:
-    summation += p
-    if summation in primes:
-        print(p, summation)
-        primesum.append(summation)
-    if summation > 1000000:
-        break
+sol = ['len','p']
 
-print(primesum[-1])
+max_len = 0
+
+for j in range(len(primes)-1):
+    print('j =',j)
+    sum_prime = 0
+    for i,p in enumerate(primes[j:]):
+
+        #turns out j=3 is alr the biggest lol
+        if j>3:
+            quit()
+
+        sum_prime += p
+        if sum_prime >= 10**6:
+            break
+        if sum_prime in primes and (i+1) > max_len:
+            print(p, sum_prime)
+            max_len = i+1
+            sol = [max_len,sum_prime]
+
+
